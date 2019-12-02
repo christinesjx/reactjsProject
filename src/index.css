@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: 'Caveat', cursive;
+}
+
+h1 {
+  font-size: 150px;
+  background: -webkit-linear-gradient(rgb(60, 125, 245), rgb(4, 9, 83));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute; 
+  top: 200px; 
+  left: 0; 
+  width: 100%; 
+}
+
+h1 span { 
+  color: white; 
+  font: bold 78px/78px Helvetica, Sans-Serif; 
+  letter-spacing: -1px;  
+  background: "transparent"; /* fallback color */
+  background: "transparent";
+  padding: 10px; 
+}
+
+h1 span.spacer {
+  padding:0 5px;
+}
+
+h1[val = "mobile"]{
+  font-size: 15px;
+  background: -webkit-linear-gradient(rgb(60, 125, 245), rgb(4, 9, 83));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute; 
+  top: 80px; 
+  left: 0; 
+  width: 100%; 
+}
+
+h1[val = "mobile"] span{
+  color: white; 
+  font: bold 38px/38px Helvetica, Sans-Serif; 
+  letter-spacing: -1px;  
+  background: "transparent"; /* fallback color */
+  background: "transparent";
+  padding: 10px; 
+}
+
+button{
+  text-align: center;
+  padding: 3px 25px;
+
+}
+
+p{
+  text-align: left;
+}
+
+.pad15 {
+  padding-left: 15px;
+}
+
+.toppad50{
+  padding-top: 100px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.pad50{
+  padding-left: 500px;
+}
+
+.small{
+  padding-top: 40px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.flex-container[val = "col"]{
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+}
+
+.center > p{
+  width: 100%;
+}
+
+.mydiv {
+  text-align: center;
+  display: inline-block;
+  flex: column;
+}
+
+div[rel="text"] {
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+h2[val="header"] {
+  text-align: center;
+  text-decoration-style: wavy;
+  color: blueviolet;
+  padding-left: 50px;
+}
+
+h2[val="mobile"] {
+  font-size: medium;
+  text-align: center;
+  text-decoration-style: wavy;
+  color: blueviolet;
+}
+
+.homebg{
+  max-width: 100%;
+  height: auto;
+
+}
+
+nav{
+  display: "flex";
+  background: "transparent";
+}
+
+.image { 
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+.App{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.input-group > input {
+  width: 150px;
+  color: forestgreen;
+  background: gainsboro;
+}
+
+.input-group  > button {
+  background: #7CBFFF;
+}
+
+div > h2[val = "title"]{
+  color: #3B6690;
+  text-align: center;
+
+}
+
+.skiseaon > div[val = "border"]{
+  margin-top: 10%;
+}
+
+div[val = "border"]{
+  text-align: justify;
+  background: rgb(231, 243, 255);
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  padding-left: 30px;
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+
+
+div[val = "border"] > h2{
+  color:forestgreen ;
+}
+
+div > ul {
+  list-style-type: none;
+}
+
+form > div{
+  width: 100%;
+  text-align: center;
+
+}
+
+ul[val = "list"] {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+li:before { 
+  content: "";
+  border-color: transparent #111;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+div > span{
+  color: #3B6690;
+}
+
+div > h3{
+  text-decoration: underline wavy blue;
+}
+
+
+
+h1{
+	font-size: 100px;
+}
+
+.App{
+  background: url("https://images.pexels.com/photos/140234/pexels-photo-140234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") center / cover no-repeat;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.App[val = "mobile"]{
+	height: 50vh;
+}
+
+.Snowflake {
+  display: inline-block;
+  width: 0.1%;
+  color: #FFFAFA;
+  opacity: 0;
+  font-size: 120px;
+  margin: 0;
+  padding: 0;
+  animation: fall 16s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 0.9;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(0, 97vh);
+    opacity: 0;
+  }
+}
+
