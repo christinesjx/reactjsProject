@@ -85,7 +85,7 @@ export default function SkiMap() {
     <MediaQuery query={breakpoints.mobile}>
         <div style={{ width: "100vw", height: "50vh" }}>
         <MapWrapped
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBAa27XKgvrWXD-976WEiA0H_77P9CsuZg`}
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=`}
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: `100%`}} />}
             mapElement={<div style={{ height: `100%` }} />}
@@ -95,7 +95,7 @@ export default function SkiMap() {
     <MediaQuery query={breakpoints.tablet}>
         <div style={{ width: "100vw", height: "50vh" }}>
         <MapWrapped
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBAa27XKgvrWXD-976WEiA0H_77P9CsuZg`}
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=`}
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: `100%`}} />}
             mapElement={<div style={{ height: `100%` }} />}
@@ -105,7 +105,7 @@ export default function SkiMap() {
     <MediaQuery query={breakpoints.desktop}>
         <div style={{ width: "100vw", height: "50vh" }}>
         <MapWrapped
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBAa27XKgvrWXD-976WEiA0H_77P9CsuZg`}
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=`}
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: `100%`}} />}
             mapElement={<div style={{ height: `100%` }} />}
